@@ -1,0 +1,16 @@
+012-06-07 16:36:41,158 INFO org.apache.zookeeper.server.quorum.QuorumPeerConfig: Reading configuration from: /var/run/cloudera-scm-agent/process/18-zookeeper-server/zoo.cfg
+2012-06-07 16:36:41,171 INFO org.apache.zookeeper.server.quorum.QuorumPeerConfig: Defaulting to majority quorums
+2012-06-07 16:36:41,175 INFO org.apache.zookeeper.server.DatadirCleanupManager: autopurge.snapRetainCount set to 5
+2012-06-07 16:36:41,175 INFO org.apache.zookeeper.server.DatadirCleanupManager: autopurge.purgeInterval set to 24
+2012-06-07 16:36:41,177 INFO org.apache.zookeeper.server.DatadirCleanupManager: Purge task started.
+2012-06-07 16:36:41,192 INFO org.apache.zookeeper.server.DatadirCleanupManager: Purge task completed.
+2012-06-07 16:36:41,229 INFO org.apache.zookeeper.server.quorum.QuorumPeerMain: Starting quorum peer
+2012-06-07 16:36:41,245 INFO org.apache.zookeeper.server.NIOServerCnxnFactory: binding to port 0.0.0.0/0.0.0.0:2181
+2012-06-07 16:36:41,257 INFO org.apache.zookeeper.server.quorum.QuorumPeer: tickTime set to 2000
+2012-06-07 16:36:41,257 INFO org.apache.zookeeper.server.quorum.QuorumPeer: minSessionTimeout set to 4000
+2012-06-07 16:36:41,257 INFO org.apache.zookeeper.server.quorum.QuorumPeer: maxSessionTimeout set to 40000
+2012-06-07 16:36:41,257 INFO org.apache.zookeeper.server.quorum.QuorumPeer: initLimit set to 10
+2012-06-07 16:36:41,269 INFO org.apache.zookeeper.server.persistence.FileSnap: Reading snapshot /var/lib/zookeeper/version-2/snapshot.0
+2012-06-07 16:36:41,294 INFO org.apache.zookeeper.server.quorum.QuorumCnxManager: My election bind port: 0.0.0.0/0.0.0.0:4181
+2012-06-07 16:36:41,305 INFO org.apache.zookeeper.server.quorum.QuorumPeer: LOOKING
+2012-06-07 16:36:41,306 INFO org.apache.zookeeper.server.quorum.FastLeaderElection: New election. My id =  2, proposed zxid=0x100000039
