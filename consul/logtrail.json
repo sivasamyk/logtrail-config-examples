@@ -2,7 +2,7 @@
   "index_patterns" : [
     {      
       "es": {
-        "default_index": "logstash-zookeeper",
+        "default_index": "logstash-consul",
         "allow_url_parameter": false
       },
       "tail_interval_in_seconds": 10,
@@ -18,7 +18,7 @@
             "timestamp" : "@timestamp",
             "display_timestamp" : "@timestamp",
             "hostname" : "host",
-            "program": "logger_name",
+            "program": "module",
             "message": "log_message"
         },
         "message_format": "{{{log_message}}}"

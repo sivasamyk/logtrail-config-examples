@@ -1,16 +1,47 @@
-012-06-07 16:36:41,158 INFO org.apache.zookeeper.server.quorum.QuorumPeerConfig: Reading configuration from: /var/run/cloudera-scm-agent/process/18-zookeeper-server/zoo.cfg
-2012-06-07 16:36:41,171 INFO org.apache.zookeeper.server.quorum.QuorumPeerConfig: Defaulting to majority quorums
-2012-06-07 16:36:41,175 INFO org.apache.zookeeper.server.DatadirCleanupManager: autopurge.snapRetainCount set to 5
-2012-06-07 16:36:41,175 INFO org.apache.zookeeper.server.DatadirCleanupManager: autopurge.purgeInterval set to 24
-2012-06-07 16:36:41,177 INFO org.apache.zookeeper.server.DatadirCleanupManager: Purge task started.
-2012-06-07 16:36:41,192 INFO org.apache.zookeeper.server.DatadirCleanupManager: Purge task completed.
-2012-06-07 16:36:41,229 INFO org.apache.zookeeper.server.quorum.QuorumPeerMain: Starting quorum peer
-2012-06-07 16:36:41,245 INFO org.apache.zookeeper.server.NIOServerCnxnFactory: binding to port 0.0.0.0/0.0.0.0:2181
-2012-06-07 16:36:41,257 INFO org.apache.zookeeper.server.quorum.QuorumPeer: tickTime set to 2000
-2012-06-07 16:36:41,257 INFO org.apache.zookeeper.server.quorum.QuorumPeer: minSessionTimeout set to 4000
-2012-06-07 16:36:41,257 INFO org.apache.zookeeper.server.quorum.QuorumPeer: maxSessionTimeout set to 40000
-2012-06-07 16:36:41,257 INFO org.apache.zookeeper.server.quorum.QuorumPeer: initLimit set to 10
-2012-06-07 16:36:41,269 INFO org.apache.zookeeper.server.persistence.FileSnap: Reading snapshot /var/lib/zookeeper/version-2/snapshot.0
-2012-06-07 16:36:41,294 INFO org.apache.zookeeper.server.quorum.QuorumCnxManager: My election bind port: 0.0.0.0/0.0.0.0:4181
-2012-06-07 16:36:41,305 INFO org.apache.zookeeper.server.quorum.QuorumPeer: LOOKING
-2012-06-07 16:36:41,306 INFO org.apache.zookeeper.server.quorum.FastLeaderElection: New election. My id =  2, proposed zxid=0x100000039
+ [2017-09-26 03:15:34,077] INFO Got user-level KeeperException when processing sessionid:0x15ebc2ea9f40001 type:create cxid:0xb zxid:0x9 txntype:-1 reqpath:n/a Error Path:/config Error:KeeperErrorCode = NoNode for /config (org.apache.zookeeper.server.PrepRequestProcessor)
+[2017-09-26 03:15:34,195] INFO Got user-level KeeperException when processing sessionid:0x15ebc2ea9f40001 type:create cxid:0x13 zxid:0xe txntype:-1 reqpath:n/a Error Path:/admin Error:KeeperErrorCode = NoNode for /admin (org.apache.zookeeper.server.PrepRequestProcessor)
+[2017-09-26 03:15:35,046] INFO Got user-level KeeperException when processing sessionid:0x15ebc2ea9f40001 type:create cxid:0x1d zxid:0x14 txntype:-1 reqpath:n/a Error Path:/cluster Error:KeeperErrorCode = NoNode for /cluster (org.apache.zookeeper.server.PrepRequestProcessor)
+[2017-09-26 03:15:39,895] INFO Accepted socket connection from /127.0.0.1:47530 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2017-09-26 03:15:39,926] INFO Client attempting to establish new session at /127.0.0.1:47530 (org.apache.zookeeper.server.ZooKeeperServer)
+[2017-09-26 03:15:39,936] INFO Established session 0x15ebc2ea9f40002 with negotiated timeout 30000 for client /127.0.0.1:47530 (org.apache.zookeeper.server.ZooKeeperServer)
+[2017-09-26 03:15:40,326] INFO Processed session termination for sessionid: 0x15ebc2ea9f40002 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2017-09-26 03:15:40,330] INFO Closed socket connection for client /127.0.0.1:47530 which had sessionid 0x15ebc2ea9f40002 (org.apache.zookeeper.server.NIOServerCnxn)
+[2017-09-26 03:15:40,687] INFO Got user-level KeeperException when processing sessionid:0x15ebc2ea9f40001 type:setData cxid:0x28 zxid:0x1b txntype:-1 reqpath:n/a Error Path:/controller_epoch Error:KeeperErrorCode = NoNode for /controller_epoch (org.apache.zookeeper.server.PrepRequestProcessor)
+[2017-09-26 03:15:41,616] WARN caught end of stream exception (org.apache.zookeeper.server.NIOServerCnxn)
+EndOfStreamException: Unable to read additional data from client sessionid 0x15ebc2ea9f40001, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:239)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:203)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-09-26 03:15:41,633] INFO Closed socket connection for client /0:0:0:0:0:0:0:1:59250 which had sessionid 0x15ebc2ea9f40001 (org.apache.zookeeper.server.NIOServerCnxn)
+[2017-09-26 03:15:48,000] INFO Expiring session 0x15ebc2ea9f40001, timeout of 6000ms exceeded (org.apache.zookeeper.server.ZooKeeperServer)
+[2017-09-26 03:15:48,006] INFO Processed session termination for sessionid: 0x15ebc2ea9f40001 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2017-09-26 03:16:05,372] INFO Accepted socket connection from /127.0.0.1:47796 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2017-09-26 03:16:05,380] INFO Client attempting to establish new session at /127.0.0.1:47796 (org.apache.zookeeper.server.ZooKeeperServer)
+[2017-09-26 03:16:05,427] INFO Established session 0x15ebc2ea9f40003 with negotiated timeout 40000 for client /127.0.0.1:47796 (org.apache.zookeeper.server.ZooKeeperServer)
+[2017-09-26 03:16:05,443] INFO Processed session termination for sessionid: 0x15ebc2ea9f40003 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2017-09-26 03:16:05,607] INFO Closed socket connection for client /127.0.0.1:47796 which had sessionid 0x15ebc2ea9f40003 (org.apache.zookeeper.server.NIOServerCnxn)
+[2017-09-26 03:16:11,359] INFO Accepted socket connection from /127.0.0.1:47874 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2017-09-26 03:16:11,387] INFO Client attempting to establish new session at /127.0.0.1:47874 (org.apache.zookeeper.server.ZooKeeperServer)
+[2017-09-26 03:16:11,884] INFO Established session 0x15ebc2ea9f40004 with negotiated timeout 6000 for client /127.0.0.1:47874 (org.apache.zookeeper.server.ZooKeeperServer)
+[2017-09-26 03:16:17,405] INFO Got user-level KeeperException when processing sessionid:0x15ebc2ea9f40004 type:delete cxid:0x29 zxid:0x25 txntype:-1 reqpath:n/a Error Path:/admin/preferred_replica_election Error:KeeperErrorCode = NoNode for /admin/preferred_replica_election (org.apache.zookeeper.server.PrepRequestProcessor)
+[2017-09-26 03:16:18,061] INFO Got user-level KeeperException when processing sessionid:0x15ebc2ea9f40004 type:create cxid:0x33 zxid:0x26 txntype:-1 reqpath:n/a Error Path:/brokers Error:KeeperErrorCode = NodeExists for /brokers (org.apache.zookeeper.server.PrepRequestProcessor)
+[2017-09-26 03:16:18,066] INFO Got user-level KeeperException when processing sessionid:0x15ebc2ea9f40004 type:create cxid:0x34 zxid:0x27 txntype:-1 reqpath:n/a Error Path:/brokers/ids Error:KeeperErrorCode = NodeExists for /brokers/ids (org.apache.zookeeper.server.PrepRequestProcessor)
+[2017-09-26 03:16:18,679] INFO Accepted socket connection from /0:0:0:0:0:0:0:1:59732 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2017-09-26 03:16:18,684] INFO Client attempting to establish new session at /0:0:0:0:0:0:0:1:59732 (org.apache.zookeeper.server.ZooKeeperServer)
+[2017-09-26 03:16:18,686] INFO Established session 0x15ebc2ea9f40005 with negotiated timeout 30000 for client /0:0:0:0:0:0:0:1:59732 (org.apache.zookeeper.server.ZooKeeperServer)
+[2017-09-26 03:16:20,237] INFO Got user-level KeeperException when processing sessionid:0x15ebc2ea9f40005 type:setData cxid:0x4 zxid:0x2a txntype:-1 reqpath:n/a Error Path:/config/topics/stomp-notification-topic Error:KeeperErrorCode = NoNode for /config/topics/stomp-notification-topic (org.apache.zookeeper.server.PrepRequestProcessor)
+[2017-09-26 03:16:20,339] INFO Got user-level KeeperException when processing sessionid:0x15ebc2ea9f40005 type:create cxid:0x6 zxid:0x2b txntype:-1 reqpath:n/a Error Path:/config/topics Error:KeeperErrorCode = NodeExists for /config/topics (org.apache.zookeeper.server.PrepRequestProcessor)
+[2017-09-26 03:16:20,558] INFO Processed session termination for sessionid: 0x15ebc2ea9f40005 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2017-09-26 03:16:20,571] WARN caught end of stream exception (org.apache.zookeeper.server.NIOServerCnxn) 
+ [2017-09-26 03:16:20,616] INFO Closed socket connection for client /0:0:0:0:0:0:0:1:59732 which had sessionid 0x15ebc2ea9f40005 (org.apache.zookeeper.server.NIOServerCnxn)
+[2017-09-26 03:16:20,646] INFO Got user-level KeeperException when processing sessionid:0x15ebc2ea9f40004 type:create cxid:0x40 zxid:0x2f txntype:-1 reqpath:n/a Error Path:/brokers/topics/stomp-notification-topic/partitions/0 Error:KeeperErrorCode = NoNode for /brokers/topics/stomp-notification-topic/partitions/0 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2017-09-26 03:16:20,654] INFO Got user-level KeeperException when processing sessionid:0x15ebc2ea9f40004 type:create cxid:0x41 zxid:0x30 txntype:-1 reqpath:n/a Error Path:/brokers/topics/stomp-notification-topic/partitions Error:KeeperErrorCode = NoNode for /brokers/topics/stomp-notification-topic/partitions (org.apache.zookeeper.server.PrepRequestProcessor)
+[2017-09-26 03:17:10,950] INFO Got user-level KeeperException when processing sessionid:0x15ebc2ea9f40004 type:setData cxid:0x4a zxid:0x34 txntype:-1 reqpath:n/a Error Path:/config/topics/__consumer_offsets Error:KeeperErrorCode = NoNode for /config/topics/__consumer_offsets (org.apache.zookeeper.server.PrepRequestProcessor)
+[2017-09-26 03:17:10,954] INFO Got user-level KeeperException when processing sessionid:0x15ebc2ea9f40004 type:create cxid:0x4b zxid:0x35 txntype:-1 reqpath:n/a Error Path:/config/topics Error:KeeperErrorCode = NodeExists for /config/topics (org.apache.zookeeper.server.PrepRequestProcessor)
+[2017-09-26 03:17:14,025] INFO Got user-level KeeperException when processing sessionid:0x15ebc2ea9f40004 type:create cxid:0xa4 zxid:0x38 txntype:-1 reqpath:n/a Error Path:/brokers/topics/__consumer_offsets/partitions/19 Error:KeeperErrorCode = NoNode for /brokers/topics/__consumer_offsets/partitions/19 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2017-09-26 03:17:14,218] INFO Got user-level KeeperException when processing sessionid:0x15ebc2ea9f40004 type:create cxid:0xa6 zxid:0x39 txntype:-1 reqpath:n/a Error Path:/brokers/topics/__consumer_offsets/partitions Error:KeeperErrorCode = NoNode for /brokers/topics/__consumer_offsets/partitions (org.apache.zookeeper.server.PrepRequestProcessor)
+[2017-09-26 03:17:14,377] INFO Got user-level KeeperException when processing sessionid:0x15ebc2ea9f40004 type:create cxid:0xab zxid:0x3d txntype:-1 reqpath:n/a Error Path:/brokers/topics/__consumer_offsets/partitions/30 Error:KeeperErrorCode = NoNode for /brokers/topics/__consumer_offsets/partitions/30 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2017-09-26 03:17:14,811] INFO Got user-level KeeperException when processing sessionid:0x15ebc2ea9f40004 type:create cxid:0xb0 zxid:0x40 txntype:-1 reqpath:n/a Error Path:/brokers/topics/__consumer_offsets/partitions/47 Error:KeeperErrorCode = NoNode for /brokers/topics/__consumer_offsets/partitions/47 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2017-09-26 03:17:15,040] INFO Got user-level KeeperException when processing sessionid:0x15ebc2ea9f40004 type:create cxid:0xb5 zxid:0x43 txntype:-1 reqpath:n/a Error Path:/brokers/topics/__consumer_offsets/partitions/29 Error:KeeperErrorCode = NoNode for /brokers/topics/__consumer_offsets/partitions/29 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2017-09-26 03:17:15,184] INFO Got user-level KeeperException when processing sessionid:0x15ebc2ea9f40004 type:create cxid:0xbb zxid:0x46 txntype:-1 reqpath:n/a Error Path:/brokers/topics/__consumer_offsets/partitions/41 Error:KeeperErrorCode = NoNode for /brokers/topics/__consumer_offsets/partitions/41 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2017-09-26 03:17:15,433] INFO Got user-level KeeperException when processing sessionid:0x15ebc2ea9f40004 type:create cxid:0xc1 zxid:0x49 txntype:-1 reqpath:n/a Error Path:/brokers/topics/__consumer_offsets/partitions/39 Error:KeeperErrorCode = NoNode for /brokers/topics/__consumer_offsets/partitions/39 (org.apache.zookeeper.server.PrepRequestProcessor) 

@@ -2,7 +2,7 @@
   "index_patterns" : [
     {      
       "es": {
-        "default_index": "logstash-zookeeper",
+        "default_index": "logstash-kube",
         "allow_url_parameter": false
       },
       "tail_interval_in_seconds": 10,
@@ -18,18 +18,18 @@
             "timestamp" : "@timestamp",
             "display_timestamp" : "@timestamp",
             "hostname" : "host",
-            "program": "logger_name",
+            "program": "file_name",
             "message": "log_message"
         },
-        "message_format": "{{{log_message}}}"
+        "message_format": "{{{pid}}} | {{{log_message}}}"
       },
       "color_mapping" : {
         "field" : "log_level",
         "mapping" : {
-          "ERROR": "#ff3232",
-          "WARN": "#ff7f24",
-          "DEBUG": "#ffb90f",
-          "TRACE": "#a2cd5a"
+          "E": "#ff3232",
+          "W": "#ff7f24",
+          "D": "#ffb90f",
+          "T": "#a2cd5a"
          }
       }
     }  

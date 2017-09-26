@@ -2,7 +2,7 @@
   "index_patterns" : [
     {      
       "es": {
-        "default_index": "logstash-zookeeper",
+        "default_index": "logstash-spring-boot",
         "allow_url_parameter": false
       },
       "tail_interval_in_seconds": 10,
@@ -18,10 +18,10 @@
             "timestamp" : "@timestamp",
             "display_timestamp" : "@timestamp",
             "hostname" : "host",
-            "program": "logger_name",
+            "program": "app_name",
             "message": "log_message"
         },
-        "message_format": "{{{log_message}}}"
+        "message_format": "{{{logger_name}}} | {{{thread_name}}} | {{{log_message}}}"
       },
       "color_mapping" : {
         "field" : "log_level",

@@ -1,0 +1,56 @@
+I0724 19:18:37.422859    1602 prober.go:113] Liveness probe for "heapster-v1.4.0-2473761002-3kn92_kube-system(a20a70a0-70a0-11e7-846a-42010a840002):heapster" succeeded
+I0724 19:18:37.721048    1602 kubelet.go:1884] SyncLoop (housekeeping)
+I0724 19:18:37.739580    1602 kubelet_pods.go:1580] Orphaned pod "b501a29c-70a0-11e7-846a-42010a840002" found, but volumes not yet removed.  Reducing cpu to minimum
+I0724 19:18:37.945270    1602 kubelet.go:2063] Container runtime status: Runtime Conditions: RuntimeReady=true reason: message:, NetworkReady=true reason: message:
+I0724 19:18:39.721094    1602 kubelet.go:1884] SyncLoop (housekeeping)
+I0724 19:18:39.733029    1602 kubelet_pods.go:1580] Orphaned pod "b501a29c-70a0-11e7-846a-42010a840002" found, but volumes not yet removed.  Reducing cpu to minimum
+I0724 19:18:40.563246    1602 eviction_manager.go:221] eviction manager: synchronize housekeeping
+I0724 19:18:40.596451    1602 helpers.go:799] eviction manager: observations: signal=memory.available, available: 6132892Ki, capacity: 7664996Ki, time: 2017-07-24 19:18:25.865229205 +0000 UTC
+I0724 19:18:40.596812    1602 helpers.go:799] eviction manager: observations: signal=nodefs.available, available: 96535324Ki, capacity: 98884832Ki, time: 2017-07-24 19:18:25.865229205 +0000 UTC
+I0724 19:18:40.596831    1602 helpers.go:799] eviction manager: observations: signal=nodefs.inodesFree, available: 6133999, capacity: 6258720, time: 2017-07-24 19:18:25.865229205 +0000 UTC
+I0724 19:18:40.596837    1602 helpers.go:799] eviction manager: observations: signal=imagefs.available, available: 96535324Ki, capacity: 98884832Ki, time: 2017-07-24 19:18:25.865229205 +0000 UTC
+I0724 19:18:40.596843    1602 helpers.go:799] eviction manager: observations: signal=imagefs.inodesFree, available: 6133999, capacity: 6258720, time: 2017-07-24 19:18:25.865229205 +0000 UTC
+I0724 19:18:40.596850    1602 helpers.go:801] eviction manager: observations: signal=allocatableMemory.available, available: 7229204Ki, capacity: 7408996Ki
+W0724 19:18:40.596859    1602 helpers.go:771] eviction manager: no observation found for eviction signal allocatableNodeFs.available
+I0724 19:18:40.596874    1602 eviction_manager.go:324] eviction manager: no resources are starved
+I0724 19:18:41.449653    1602 server.go:792] GET /healthz: (23.727Âµs) 200 [[curl/7.51.0] 127.0.0.1:41568]
+I0724 19:18:41.721069    1602 kubelet.go:1884] SyncLoop (housekeeping)
+I0724 19:18:41.721197    1602 kubelet_pods.go:754] Pod "gluster-io-client_e2e-tests-volume-io-h415g(b501a29c-70a0-11e7-846a-42010a840002)" is terminated, but some volumes have not been cleaned up
+I0724 19:18:41.740516    1602 kubelet_pods.go:1580] Orphaned pod "b501a29c-70a0-11e7-846a-42010a840002" found, but volumes not yet removed.  Reducing cpu to minimum
+I0724 19:18:42.947546    1602 kubelet.go:2063] Container runtime status: Runtime Conditions: RuntimeReady=true reason: message:, NetworkReady=true reason: message:
+I0724 19:18:43.721089    1602 kubelet.go:1884] SyncLoop (housekeeping)
+I0724 19:18:43.727713    1602 kubelet_pods.go:1580] Orphaned pod "b501a29c-70a0-11e7-846a-42010a840002" found, but volumes not yet removed.  Reducing cpu to minimum
+I0724 19:18:45.721217    1602 kubelet.go:1884] SyncLoop (housekeeping)
+I0724 19:18:45.731067    1602 kubelet_pods.go:1580] Orphaned pod "b501a29c-70a0-11e7-846a-42010a840002" found, but volumes not yet removed.  Reducing cpu to minimum
+I0724 19:18:47.421601    1602 prober.go:160] HTTP-Probe Host: http://10.100.2.3, Port: 8082, Path: /healthz
+I0724 19:18:47.421636    1602 prober.go:163] HTTP-Probe Headers: map[]
+I0724 19:18:47.472737    1602 http.go:96] Probe succeeded for http://10.100.2.3:8082/healthz, Response: {200 OK 200 HTTP/1.1 1 1 map[Date:[Mon, 24 Jul 2017 19:18:47 GMT] Content-Length:[2] Content-Type:[text/plain; charset=utf-8]] 0xc42109d140 2 [] true false map[] 0xc420ef8500 <nil>}
+I0724 19:18:47.472790    1602 prober.go:113] Liveness probe for "heapster-v1.4.0-2473761002-3kn92_kube-system(a20a70a0-70a0-11e7-846a-42010a840002):heapster" succeeded
+I0724 19:18:47.721048    1602 kubelet.go:1884] SyncLoop (housekeeping)
+I0724 19:18:47.731794    1602 kubelet_pods.go:1580] Orphaned pod "b501a29c-70a0-11e7-846a-42010a840002" found, but volumes not yet removed.  Reducing cpu to minimum
+I0724 19:18:47.949489    1602 kubelet.go:2063] Container runtime status: Runtime Conditions: RuntimeReady=true reason: message:, NetworkReady=true reason: message:
+I0724 19:18:49.721055    1602 kubelet.go:1884] SyncLoop (housekeeping)
+I0724 19:18:49.728054    1602 kubelet_pods.go:1580] Orphaned pod "b501a29c-70a0-11e7-846a-42010a840002" found, but volumes not yet removed.  Reducing cpu to minimum
+I0724 19:18:50.597022    1602 eviction_manager.go:221] eviction manager: synchronize housekeeping
+I0724 19:18:50.625364    1602 helpers.go:801] eviction manager: observations: signal=allocatableMemory.available, available: 7229240Ki, capacity: 7408996Ki
+I0724 19:18:50.625775    1602 helpers.go:799] eviction manager: observations: signal=memory.available, available: 6132364Ki, capacity: 7664996Ki, time: 2017-07-24 19:18:43.66647023 +0000 UTC
+I0724 19:18:50.625993    1602 helpers.go:799] eviction manager: observations: signal=nodefs.available, available: 96535336Ki, capacity: 98884832Ki, time: 2017-07-24 19:18:43.66647023 +0000 UTC
+I0724 19:18:50.626141    1602 helpers.go:799] eviction manager: observations: signal=nodefs.inodesFree, available: 6133999, capacity: 6258720, time: 2017-07-24 19:18:43.66647023 +0000 UTC
+I0724 19:18:50.626293    1602 helpers.go:799] eviction manager: observations: signal=imagefs.available, available: 96535336Ki, capacity: 98884832Ki, time: 2017-07-24 19:18:43.66647023 +0000 UTC
+I0724 19:18:50.626420    1602 helpers.go:799] eviction manager: observations: signal=imagefs.inodesFree, available: 6133999, capacity: 6258720, time: 2017-07-24 19:18:43.66647023 +0000 UTC
+W0724 19:18:50.626560    1602 helpers.go:771] eviction manager: no observation found for eviction signal allocatableNodeFs.available
+I0724 19:18:50.626698    1602 eviction_manager.go:324] eviction manager: no resources are starved
+I0724 19:18:50.721052    1602 kubelet.go:1861] SyncLoop (SYNC): 1 pods; fluentd-gcp-v2.0-3l0f4_kube-system(750bc796-70a0-11e7-846a-42010a840002)
+I0724 19:18:50.721141    1602 kubelet_pods.go:1179] Generating status for "fluentd-gcp-v2.0-3l0f4_kube-system(750bc796-70a0-11e7-846a-42010a840002)"
+I0724 18:46:22.573192    1582 flags.go:52] FLAG: --volume-stats-agg-period="1m0s"
+I0724 18:46:22.573246    1582 feature_gate.go:144] feature gates: map[ExperimentalCriticalPodAnnotation:true AdvancedAuditing:true]
+I0724 18:46:22.573566    1582 client.go:73] Connecting to docker on unix:///var/run/docker.sock
+I0724 18:46:22.573577    1582 client.go:93] Start docker client with request timeout=2m0s
+W0724 18:46:22.574611    1582 cni.go:189] Unable to update cni config: No networks found in /etc/cni/net.d
+I0724 18:46:22.584268    1582 iptables.go:564] couldn't get iptables-restore version; assuming it doesn't support --wait
+I0724 18:46:22.596607    1582 gce.go:508] Using existing Token Source &oauth2.reuseTokenSource{new:google.computeSource{account:""}, mu:sync.Mutex{state:0, sema:0x0}, t:(*oauth2.Token)(nil)}
+I0724 18:46:22.598998    1582 gce.go:508] Using existing Token Source &oauth2.reuseTokenSource{new:google.computeSource{account:""}, mu:sync.Mutex{state:0, sema:0x0}, t:(*oauth2.Token)(0xc420210f00)}
+I0724 18:46:22.599040    1582 gce.go:508] Using existing Token Source &oauth2.reuseTokenSource{new:google.computeSource{account:""}, mu:sync.Mutex{state:0, sema:0x0}, t:(*oauth2.Token)(0xc420210f00)}
+I0724 18:46:22.599080    1582 server.go:435] Successfully initialized cloud provider: "gce" from the config file: ""
+I0724 18:46:22.599111    1582 server.go:674] cloud provider determined current node name to be bootstrap-e2e-minion-group-7qjd
+I0724 18:46:22.599128    1582 bootstrap.go:58] Using bootstrap kubeconfig to generate TLS client cert, key and kubeconfig file

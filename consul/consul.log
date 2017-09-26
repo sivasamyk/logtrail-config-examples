@@ -1,0 +1,33 @@
+2017/09/26 06:15:57 [INFO] raft: Initial configuration (index=1): [{Suffrage:Voter ID:127.0.0.1:8300 Address:127.0.0.1:8300}]
+2017/09/26 06:15:57 [INFO] raft: Node at 127.0.0.1:8300 [Follower] entering Follower state (Leader: "")
+2017/09/26 06:15:57 [INFO] serf: EventMemberJoin: 0a6a10ee6bdc.dc1 127.0.0.1
+2017/09/26 06:15:57 [INFO] serf: EventMemberJoin: 0a6a10ee6bdc 127.0.0.1
+2017/09/26 06:15:57 [INFO] consul: Adding LAN server 0a6a10ee6bdc (Addr: tcp/127.0.0.1:8300) (DC: dc1)
+2017/09/26 06:15:57 [INFO] consul: Handled member-join event for server "0a6a10ee6bdc.dc1" in area "wan"
+2017/09/26 06:15:57 [INFO] agent: Started DNS server 0.0.0.0:8600 (udp)
+2017/09/26 06:15:57 [INFO] agent: Started DNS server 0.0.0.0:8600 (tcp)
+2017/09/26 06:15:57 [INFO] agent: Started HTTP server on 0.0.0.0:8500
+2017/09/26 06:15:57 [WARN] raft: Heartbeat timeout from "" reached, starting election
+2017/09/26 06:15:57 [INFO] raft: Node at 127.0.0.1:8300 [Candidate] entering Candidate state in term 2
+2017/09/26 06:15:57 [DEBUG] raft: Votes needed: 1
+2017/09/26 06:15:57 [DEBUG] raft: Vote granted from 127.0.0.1:8300 in term 2. Tally: 1
+2017/09/26 06:15:57 [INFO] raft: Election won. Tally: 1
+2017/09/26 06:15:57 [INFO] raft: Node at 127.0.0.1:8300 [Leader] entering Leader state
+2017/09/26 06:15:57 [INFO] consul: cluster leadership acquired
+2017/09/26 06:15:57 [INFO] consul: New leader elected: 0a6a10ee6bdc
+2017/09/26 06:15:57 [DEBUG] consul: Skipping self join check for "0a6a10ee6bdc" since the cluster is too small
+2017/09/26 06:15:57 [INFO] consul: member '0a6a10ee6bdc' joined, marking health alive
+2017/09/26 06:15:57 [INFO] agent: Synced node info
+2017/09/26 06:16:08 [INFO] Graceful shutdown disabled. Exiting
+2017/09/26 06:16:08 [INFO] agent: Requesting shutdown
+2017/09/26 06:16:08 [INFO] consul: shutting down server
+2017/09/26 06:16:08 [WARN] serf: Shutdown without a Leave
+2017/09/26 06:16:08 [WARN] serf: Shutdown without a Leave
+2017/09/26 06:16:08 [INFO] manager: shutting down
+2017/09/26 06:16:08 [INFO] agent: consul server down
+2017/09/26 06:16:08 [INFO] agent: shutdown complete
+2017/09/26 06:16:08 [INFO] agent: Stopping DNS server 0.0.0.0:8600 (tcp)
+2017/09/26 06:16:08 [INFO] agent: Stopping DNS server 0.0.0.0:8600 (udp)
+2017/09/26 06:16:08 [INFO] agent: Stopping HTTP server 0.0.0.0:8500
+2017/09/26 06:16:08 [INFO] agent: Waiting for endpoints to shut down
+2017/09/26 06:16:08 [INFO] agent: Endpoints down
