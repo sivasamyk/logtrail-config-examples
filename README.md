@@ -4,7 +4,7 @@ This repo contains list of example recommended configurations for [Logtrail](htt
 Each directory contains following files:
 
 * **sample log file** : Example log file
-* **logstash.conf** : Logstash configuration file for parsing the log file
+* **logstash.conf** : Logstash configuration file for parsing the log file. Assumes the timestamps of incoming messages are in UTC if not explicitly present in timestamp.
 * **logtrail.json** : Logtrail plugin configuration
 * **screenshot** : Example logtrail screenshot
 
