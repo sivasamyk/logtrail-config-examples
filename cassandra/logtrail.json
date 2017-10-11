@@ -21,7 +21,7 @@
             "program": "filename",
             "message": "log_message"
         },
-        "message_format": "[thread] | {{{log_message}}}"
+        "message_format": "[{{{thread}}}] | {{{log_message}}}"
       },
       "color_mapping" : {
         "field" : "log_level",
