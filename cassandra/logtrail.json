@@ -1,0 +1,37 @@
+{
+  "index_patterns" : [
+    {      
+      "es": {
+        "default_index": "logstash-cassandra",
+        "allow_url_parameter": false
+      },
+      "tail_interval_in_seconds": 10,
+      "es_index_time_offset_in_seconds": 0,
+      "display_timezone": "Etc/UTC",
+      "display_timestamp_format": "YYYY MMM DD HH:mm:ss",
+      "max_buckets": 500,
+      "default_time_range_in_days" : 0,
+      "max_hosts": 100,
+      "max_events_to_keep_in_viewer": 5000,
+      "fields" : {
+        "mapping" : {
+            "timestamp" : "@timestamp",
+            "display_timestamp" : "@timestamp",
+            "hostname" : "host",
+            "program": "filename",
+            "message": "log_message"
+        },
+        "message_format": "[thread] | {{{log_message}}}"
+      },
+      "color_mapping" : {
+        "field" : "log_level",
+        "mapping" : {
+          "ERROR": "#ff3232",
+          "WARN": "#ff7f24",
+          "DEBUG": "#ffb90f",
+          "TRACE": "#a2cd5a"
+         }
+      }
+    }  
+  ]
+}

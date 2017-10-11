@@ -1,0 +1,1 @@
+![Cassandra Logtrail](cassandra.png)
